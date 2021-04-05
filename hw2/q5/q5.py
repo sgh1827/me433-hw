@@ -66,9 +66,9 @@ data3 = [] # column 1
 t4 = [] # column 0
 data4 = [] # column 1
 nt1 = []
-nt1 = []
-nt1 = []
-nt1 = []
+nt2 = []
+nt3 = []
+nt4 = []
 ndata1 = []
 ndata2 = []
 ndata3 = []
@@ -106,7 +106,7 @@ with open('sigB.csv') as g:
 dt2 = len(t2)/t2[-1]
 for i in range(len(data2)-x2):
     filteration(data2, ndata2, i, x2)
-print("Sample rate 1: " + str(dt2))
+print("Sample rate 2: " + str(dt2))
 nt2 = t2[0:-x2]
 fft_plot(t2, nt2, data2, ndata2,x2)       
 
@@ -123,7 +123,7 @@ with open('sigC.csv') as h:
 dt3 = len(t3)/t3[-1]
 for i in range(len(data3)-x3):
     filteration(data3, ndata3, i, x3)
-print("Sample rate 1: " + str(dt3))
+print("Sample rate 3: " + str(dt3))
 nt3 = t3[0:-x3]
 fft_plot(t3, nt3, data3, ndata3,x3)
 
@@ -142,6 +142,6 @@ with open('sigD.csv') as m:
 dt4 = len(t4)/t4[-1]
 for i in range(len(data4)-x4):
     filteration(data4, ndata4, i, x4)
-print("Sample rate 1: " + str(dt4))
+print("Sample rate 4: " + str(dt4))
 nt4 = t4[0:-x4]
 fft_plot(t4, nt4, data4, ndata4,x4)
