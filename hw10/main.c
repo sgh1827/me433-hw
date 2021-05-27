@@ -34,9 +34,8 @@
 #pragma config PMDL1WAY = OFF // allow multiple reconfigurations
 #pragma config IOL1WAY = OFF // allow multiple reconfigurations
 
-void readUART1(char * string, int maxLength);
-void writeUART1(const char * string);
-char m[100]; //use this for uart debugging
+
+char m[100]; 
 
 int main() {
     
